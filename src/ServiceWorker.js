@@ -9,7 +9,7 @@ const files = [
 
 self.addEventListener('install', event => {
   self.skipWaiting();
-
+  // eslint-disable-next-line no-console
   console.log('I am working service worker on installing phase');
   event.waitUntil(
     caches.open(cacheName)
@@ -18,6 +18,7 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
+  // eslint-disable-next-line no-console
   console.log('I am working service worker on activating phase');
   self.clients.claim();
   const cacheWhiteList = [cacheName];
@@ -35,9 +36,11 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {
       if (response) {
+        // eslint-disable-next-line no-console
         console.log('Found ', event.request.url, ' in cache');
         return response;
       }
+      // eslint-disable-next-line no-console
       console.log('Network request for ', event.request.url);
 
       return fetch(event.request)

@@ -11,8 +11,9 @@ newGameBtn.addEventListener('click', () => {
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('ServiceWorker.js')
-    .then(registration => navigator.serviceWorker.ready)
+    .then(() => navigator.serviceWorker.ready)
     .then(registration => {
+      // eslint-disable-next-line no-console
       console.log('Registration success', registration);
     })
     .catch(error => {

@@ -1,8 +1,12 @@
-@import '/src/fonts/webpixel_bitmap.css';
 @import './colors.scss';
 @import './mixins.scss';
 @import './base.scss';
 @import './atom.scss';
+
+@font-face {
+  font-family: "Webpixel-Bitmap";
+  src: url('../font/webpixel_bitmap_bold.otf');
+}
 
 .header {
   display: flex;

@@ -1,47 +1,69 @@
-Memory Blocks Game
-Description
-It's a great card game to test and train your memory skills. Cards lays in rows, face down. Every card has a pair. Turn over any two cards. If the two cards match, keep them. If they don't match, they will be turned back over. Remember what was on each card and where it was. Try to reduce the number of flips and time. The game is over when all the cards have been matched. Enjoy! You can try it here: mblocks.jala.in.ua.
 
-screenshot
+# The Snake Game
 
-Aim of project
-The Memory Blocks Game app is a training project to understanding front-end technologies.
+## Description
 
-Tech stack
-Project was powered by HTML, SCSS, JavaScript ES2015, PHP and mySQL for back-end. Also npm, webpack, lint, jest were used to development.
+It's a classic Nokia's phone game, there a "snake" consisting of a couple of square blocks is moving across a field.
+The purpuse of this game is to manuever the snake, whyle triying to catch the food block for for score points.
+With each block the snake grows in size, making it harder to maneuver.
+The speed of the snake increases every 30 secconds.
+The game ends then the snake hits a wall or the body.
 
-Getting started
-Clone repository from github:
+## Aim of project
 
+The Snake Game is a training project to inmprove my understanding and practical knowledge of front-end technologies, mainly vanilla javascript. 
+
+## Tech stack
+
+Project was powered by `HTML`, `SCSS`, `JavaScript ES2015`. 
+Also `npm`, `webpack`, `lint`, `jest` were used for development. 
+
+## Getting started
+
+Clone repository from `github`:
+
+```
 git clone https://github.com/vasyldzhala/mblocks.git
-Move to project's directory and install:
+```
 
-npm cd mblocks
+Move to the project's directory and run install:
+
+```
+npm cd snake-game
 npm install
-Fonts installing
-App require font-awesome, install it
+```
 
-$npm install @fortawesome/fontawesome-free 
-or download here
-
-Move webfonts directory into you project. Tune [YOUR_PATH] in reference to webfonts directory in src/scss/_variables.scss file:
-
-$fa-font-path: "[YOUR_PATH]/webfonts";
-Deployment
-Run in console
-
-npm run build
-Application will be bundled into dist directory.
+## Deployment
 
 For development mode run
 
-npm run start
-Author
-Vasyl Dzhala - vasyldzhala
-The project was created as part of the training
-in front-camp-2018 by ELEKS, ELEKS University, [ELEKS University] on Facebook
+```
+npm start
+```
 
-Teacher
-Vladimir Shevchuk - dosandk
-Mockup of project
-Memory Blocks
+To create a bundle run 
+
+```
+npm run build
+```
+
+Application will be bundled into the `dist` directory.
+
+
+
+## Author
+
+* **Aleksandr Prokopiev** - [aloudi](https://github.com/aloudi)
+
+## The project was created as part of the training 
+
+in [front-camp-2018](https://github.com/front-camp-2018)
+by [ELEKS](https://eleks.com/), [ELEKS University](https://careers.eleks.com/university/), 
+[[ELEKS University] on Facebook](https://www.facebook.com/eleksuniversity/)
+
+## Teacher
+
+* **Vladimir Shevchuk** - [dosandk](https://github.com/dosandk)
+
+## Mockup of project
+[The Snake Game](https://wireframepro.mockflow.com/view/Md526af6f857e614c40032ceb32b84e7b1539721097170#/page/e75d97c504c64d8bb9a6447f53e6e6e9)

@@ -9,6 +9,10 @@ With each block the snake grows in size, making it harder to maneuver.
 The speed of the snake increases every 30 secconds.
 The game ends then the snake hits a wall or the body.
 
+## Demo
+
+https://aloudi.github.io/snake-game/
+
 ## Aim of project
 
 The Snake Game is a training project to inmprove my understanding and practical knowledge of front-end technologies, mainly vanilla javascript. 
@@ -23,7 +27,7 @@ Also `npm`, `webpack`, `lint`, `jest` were used for development.
 Clone repository from `github`:
 
 ```
-git clone https://github.com/vasyldzhala/mblocks.git
+git clone https://github.com/aloudi/.git
 ```
 
 Move to the project's directory and run install:

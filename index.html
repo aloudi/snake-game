@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Snake Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>The Snake Game</h1>
+  </header>
+  <main id="main-container" class="main-container hidden">
+    <aside class="left-panel">
+      <section class='high-score-section'>
+        <span>High Score</span>
+        <span id="high-score" class="high-score"></span>
+      </section>
+      <section class="score-section">
+        <span>Score</span>
+        <span id="score" class="score"></span>
+      </section>
+    </aside>
+    <canvas id="game-canvas" class="game-canvas"></canvas>
+    <aside class="right-panel">
+      <section class='time-section'>
+        <span>Next Level In</span>
+        <span id="timer" class="time"></span>
+      </section>
+      <section class='level-section'>
+        <span>Level</span>
+        <span id="level" class="level"></span>
+      </section>
+    </aside>
+  </main>
+  <footer class="footer">
+    <button id='start-new-game' class="start-new-game-btn">Start New Game</button>
+  </footer>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>

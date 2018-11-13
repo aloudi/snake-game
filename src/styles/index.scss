@@ -1,0 +1,130 @@
+@import '/src/fonts/webpixel_bitmap.css';
+@import './colors.scss';
+@import './mixins.scss';
+@import './base.scss';
+@import './atom.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vh;
+  .game-canvas {
+    width: 75vh;
+  }
+  .right-panel {
+    @include panel-mixin();
+    .time {
+      font-size: 64px;
+    }
+    .level {
+      font-size: 64px;
+    }
+  }
+  .left-panel {
+    @include panel-mixin();
+    .high-score {
+      font-size: 64px;
+    }
+    .score {
+      font-size: 64px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  .start-new-game-btn {
+    font-size: 36px;
+    color: $text-color;
+    background-color: $side-panels-color;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .body {
+    font-size: 12px;
+  }
+  .header {
+    display: flex;
+    height: auto;
+  }
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    .right-panel {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .time-section {
+        margin: 0 24px;
+      }
+      .time {
+        font-size: 24px;
+      }
+      .level-section {
+        margin: 0 24px;
+      }
+      .level {
+        font-size: 24px;
+      }
+    }
+    .left-panel {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .high-score-section {
+        margin: 0 24px;
+      }
+      .high-score {
+        font-size: 24px;
+      }
+      .score-section {
+        margin: 0 24px;
+      }
+      .score {
+        font-size: 24px;
+      }
+    }
+    .game-canvas {
+      height: 60vw;
+      width: 60vw;
+    }
+  }
+}
+
+@media screen and (max-width:650px) {
+  .main-container {
+    .game-canvas {
+      height: 80vw;
+      width: 80vw;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-container {
+    .game-canvas {
+      height: 100vw;
+      width: 100vw;
+    }
+  }
+}
